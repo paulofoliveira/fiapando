@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fiapandoApp.LoginPage" Title="Fiapando - Login" BackgroundColor="Aqua">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" 
+				HorizontalOptions="CenterAndExpand" 
+				VerticalOptions="CenterAndExpand" 
+				Spacing="15">
+			
+			<Entry 
+				x:Name="LoginEntry" 
+				WidthRequest="300" 
+				HeightRequest="40" 
+				Placeholder="Login do usuário" 
+				PlaceholderColor="Gray" />
+			
+			<Entry 
+				x:Name="PasswordEntry" 
+				WidthRequest="300" 
+				HeightRequest="40" 
+				Placeholder="Senha do usuário" 
+				IsPassword="true" />
+
+			<StackLayout Orientation="Horizontal">
+				<Button 
+				x:Name="LoginButton" 
+				WidthRequest="100" 
+				HeightRequest="50" 
+				BackgroundColor="Maroon" 
+				TextColor="White" 
+				Text="Login" Clicked="LoginButton_Clicked" HorizontalOptions="FillAndExpand"></Button>
+
+				<Button 
+				x:Name="CadastrarButton" 
+				WidthRequest="100" 
+				HeightRequest="50" 
+				BackgroundColor="Maroon" 
+				TextColor="White" 
+				Text="Cadastrar" Clicked="CadastrarButton_Clicked" HorizontalOptions="FillAndExpand"></Button>
+
+			</StackLayout>
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
