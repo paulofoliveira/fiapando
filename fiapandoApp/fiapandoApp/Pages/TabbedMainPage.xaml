@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="fiapandoApp.TabbedMainPage"
-		xmlns:mypages="clr-namespace:fiapandoApp;assembly=fiapandoApp" Title="Tabbled">
+		xmlns:tabs="clr-namespace:fiapandoApp;assembly=fiapandoApp" Title="Page Tabs">
 	<TabbedPage.Children>
-	<mypages:CadastrarPage Title="Cadastrar" BackgroundColor="Red" />
+	<tabs:EnderecoPage Title="Endereço" BackgroundColor="Red" />
+	<tabs:DadosPage Title="Dados" BackgroundColor="Green" />
 	</TabbedPage.Children>
 </TabbedPage>

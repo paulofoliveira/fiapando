@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin;
 
 namespace fiapandoApp.iOS
 {
@@ -13,6 +14,8 @@ namespace fiapandoApp.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init();
+
+			FormsMaps.Init();
 
 			LoadApplication(new App());
 

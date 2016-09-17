@@ -28,6 +28,11 @@ namespace fiapandoApp
 			Navigation.InsertPageBefore(new CadastrarPage(), this);
 			await Navigation.PopAsync();
 		}
+
+		async void RecuperarButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new RecuperarSenhaPage());
+		}
 	}
 }
 

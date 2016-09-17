@@ -36,7 +36,15 @@
 				BackgroundColor="Maroon" 
 				TextColor="White" 
 				Text="Cadastrar" Clicked="CadastrarButton_Clicked" HorizontalOptions="FillAndExpand"></Button>
-
+				
+				<Button 
+				x:Name="RecuperarButton" 
+				WidthRequest="100" 
+				HeightRequest="50" 
+				BackgroundColor="Maroon" 
+				TextColor="White" 
+				Text="Recuperar" Clicked="RecuperarButton_Clicked" HorizontalOptions="FillAndExpand"></Button>
+				
 			</StackLayout>
 			
 

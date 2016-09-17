@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fiapandoApp.RecuperarSenhaPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fiapandoApp.RecuperarSenhaPage" Title="Recuperar Senha" BackgroundColor="Gray">
 	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+			<Entry x:Name="RecuperarEntry" WidthRequest="200" Keyboard="Email" Placeholder="Informe o e-mail"  />
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Button x:Name="RecuperarButton" Text="Recuperar" BackgroundColor="Yellow" TextColor="Black" HeightRequest="50" WidthRequest="100" Clicked="Recuperar_Clicked" />
+				<Button x:Name="VoltarButton" Text="Voltar" BackgroundColor="Yellow" TextColor="Black" HeightRequest="50" WidthRequest="100" Clicked="Voltar_Clicked" />
+			</StackLayout>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

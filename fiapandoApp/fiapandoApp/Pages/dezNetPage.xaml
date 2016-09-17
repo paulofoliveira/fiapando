@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fiapandoApp.dezNetPage">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="5" BackgroundColor="Gray">
+			<Entry x:Name="LoginEntry" WidthRequest="200" HeightRequest="50" Placeholder="Informe aqui o login ..." 
+				PlaceholderColor="Navy" TextColor="Red" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+			
+				<Entry x:Name="SenhaEntry" WidthRequest="200" HeightRequest="50" Placeholder="Informe aqui a senha ..." 
+				PlaceholderColor="Navy" TextColor="Red" FontAttributes="Bold" HorizontalTextAlignment="Center" IsPassword="true" />
+
+			<StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+			<Button Text="Entrar" WidthRequest="100" HeightRequest="50" BackgroundColor="Yellow" TextColor="Black" FontAttributes="Italic" Clicked="Entrar_Clicked" />
+			<Button Text="Recuperar Senha" WidthRequest="200" HeightRequest="50" BackgroundColor="Yellow" TextColor="Black" FontAttributes="Italic" Clicked="RecuperarSenha_Clicked" />
+				
+			</StackLayout>
+						
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

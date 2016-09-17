@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="fiapandoApp.DadosPage"
+		xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0,10">
+			<maps:Map x:Name="MapaPadraoMap" WidthRequest="300" HeightRequest="200" IsShowingUser="true" />
+			<Label x:Name="LatituteLabel" TextColor="Black" WidthRequest="200"></Label>
+			<Label x:Name="LongitudeLabel" TextColor="Black" WidthRequest="200"></Label>
+			<Label x:Name="LocalizacaoLabel" TextColor="Black" WidthRequest="200"></Label>
+			<Label x:Name="TemperaturaLabel" TextColor="Black" WidthRequest="200"></Label>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

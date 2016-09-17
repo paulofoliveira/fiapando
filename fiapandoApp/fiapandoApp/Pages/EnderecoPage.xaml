@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fiapandoApp.EnderecoPage" BackgroundColor="Navy">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+		<Entry x:Name="CepEntry" Placeholder="Informe o CEP" PlaceholderColor="Navy" TextColor="Navy" WidthRequest="200" Unfocused="Cep_Unfocused" />
+		<Entry x:Name="EnderecoEntry" IsEnabled="false" PlaceholderColor="Navy" TextColor="Navy"  WidthRequest="200"  />
+		<Entry x:Name="CidadeEntry" IsEnabled="false" PlaceholderColor="Navy" TextColor="Navy"  WidthRequest="200" />
+		<Entry x:Name="BairroEntry" IsEnabled="false" PlaceholderColor="Navy" TextColor="Navy"  WidthRequest="200" />
+		<Entry x:Name="EstadoEntry" IsEnabled="false" PlaceholderColor="Navy" TextColor="Navy"  WidthRequest="200" />
+		<Entry PlaceholderColor="Navy" TextColor="Navy"  WidthRequest="200" />	
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
