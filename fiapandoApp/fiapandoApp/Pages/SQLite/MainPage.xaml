@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:fiapandoApp"
+		x:Class="fiapandoApp.MainPage"
+		Title="Pessoas"
+		x:Name="MainPage">
+	<StackLayout Padding="20">
+		<Entry Placeholder="Nome" Text="{Binding Nome}"></Entry>
+		<Entry Placeholder="Sobrenome" Text="{Binding SobreNome}"></Entry>
+		<Entry Placeholder="Idade" Text="{Binding Idade}" Keyboard="Numeric"></Entry>
+		<Picker Title="Selecione ..." SelectedIndex="{Binding SexoIndex}">
+			<Picker.Items>
+				<x:String>Feminino</x:String>
+				<x:String>Masculino</x:String>
+			</Picker.Items>
+		</Picker>
+		<Button Text="Adicionar" TextColor="White" BackgroundColor="Green" Command="{Binding AdicionarCommand}"></Button>
+
+		<ListView ItemsSource="{Binding Registros}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding}">
+						<TextCell.ContextActions>
+							<MenuItem Text="Apagar" 
+								IsDestructive="true" 
+								CommandParameter="{Binding .}" 
+								Command="{Binding Path=BindingContext.ExcluirCommand, Source={x:Reference Name=MainPage}}"></MenuItem>
+						</TextCell.ContextActions>
+					</TextCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<Button Text="Excluir Tudo" TextColor="White" BackgroundColor="Red" Command="{Binding ExcluirTudoCommand}"></Button>
+		<Button Text="Feminino" TextColor="Black" BackgroundColor="Aqua" Command="{Binding SexoCommand}" CommandParameter="Feminino"></Button>
+		<Button Text="Masculino" TextColor="Black" BackgroundColor="Aqua" Command="{Binding SexoCommand}" CommandParameter="Masculino"></Button>
+		<Button Text="20+" TextColor="Black" BackgroundColor="Aqua" Command="{Binding IdadeFiltroCommand}" CommandParameter="20"></Button>
+		<Button Text="50+" TextColor="Black" BackgroundColor="Aqua" Command="{Binding IdadeFiltroCommand}" CommandParameter="50"></Button>
+		
+	</StackLayout>
+</ContentPage>
